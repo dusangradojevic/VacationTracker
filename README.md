@@ -89,7 +89,7 @@ The REST API is described below.
 
     []
 
-## Import Employee Profiles
+## Get Used Vacation Days For Time Period
 
 ### Request
 
@@ -108,7 +108,7 @@ The REST API is described below.
 
     []
 
-## Import Employee Profiles
+## Insert New Record
 
 ### Request
 
