@@ -23,6 +23,10 @@
 
     `POST`
 
+* **URL Params:**
+
+    None
+
 * **Body Params:**
     
     File content: `employee_profiles.csv`
@@ -49,9 +53,14 @@
 * **Method**
 
     `POST`
+    
+* **URL Params:**
+
+    None
 
 * **Body Params:**
-*   File content: `used_vacation_dates.csv`
+   
+    File content: `used_vacation_dates.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=used_vacation_dates.csv' http://localhost:8081/api/upload/importUsedVacations
 
@@ -75,9 +84,14 @@
 * **Method**
 
     `POST`
+    
+* **URL Params:**
+
+    None
 
 * **Body Params:**
-*   File content: `vacations_2019.csv`
+    
+    File content: `vacations_2019.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=vacations_2019.csv' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
 
@@ -103,6 +117,14 @@
     `POST`
 
     curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
+    
+* **URL Params:**
+
+    None
+
+* **Body Params:**
+
+    None
 
 ### Response
 
@@ -123,6 +145,16 @@
 * **Method**
 
     `GET`
+    
+* **URL Params:**
+
+    ### Required
+    
+    `year=targetYear`
+
+* **Body Params:**
+
+    None
 
     curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
