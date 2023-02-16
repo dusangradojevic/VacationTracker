@@ -98,9 +98,23 @@ The REST API is described below.
     Status: 200 OK
     Connection: close
     Content-Type: application/json
-    Content-Length: 2
-
-    []
+    [
+        {
+            "id": 115,
+            "startDate": "2019-10-07T00:00:00.000+00:00",
+            "endDate": "2019-10-07T00:00:00.000+00:00"
+        },
+        {
+            "id": 207,
+            "startDate": "2019-10-02T00:00:00.000+00:00",
+            "endDate": "2019-10-04T00:00:00.000+00:00"
+        },
+        {
+            "id": 520,
+            "startDate": "2019-10-01T00:00:00.000+00:00",
+            "endDate": "2019-10-07T00:00:00.000+00:00"
+        },
+    ]
 
 ## Insert New Record
 
