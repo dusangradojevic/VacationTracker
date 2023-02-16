@@ -13,8 +13,6 @@
 
 ## Import Employee Profiles
 
-### Request
-
 * **URL:**
     
     `/api/upload/importEmployeeProfiles`
@@ -33,14 +31,15 @@
 
     curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
-### Response
+* **Success response:**
 
-    Status: 200 OK
-    Content-Type: application/json
-    Content: 
-    {
-        "message": "Import successful."
-    }
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
+    
+* **Error response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
 
 ## Import Used Vacations
 
