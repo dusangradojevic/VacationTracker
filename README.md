@@ -17,7 +17,7 @@
 
 * HTTP method - POST
 
-* Endpoint: /api/upload/importEmployeeProfiles
+* Endpoint: `/api/upload/importEmployeeProfiles`
 
     curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
