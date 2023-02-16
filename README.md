@@ -150,7 +150,7 @@
 
     **Required**
     
-    `year=targetYear`
+    `year=[date]`
     
     **Optional**
     
@@ -184,6 +184,21 @@
 * **Method**
 
     `GET`
+    
+* **URL Params:**
+
+    **Required**
+    
+    `startDate=[date]
+    endDate=[date]`
+    
+    **Optional**
+    
+    None
+
+* **Body Params:**
+
+    None
 
     curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
