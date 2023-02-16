@@ -4,36 +4,21 @@
 
     cd database
     mvn clean install
+    
+## Run
 
-The REST endpoint for reminder submitting:
-* {site-url}/reminders/add (HTTP POST method)
+    docker-compose up 
+    
+# REST API
 
-Reminder is passed as an argument in a body in JSON format and has the following attributes: 
-* String user - who is posting a reminder
-* Array<String> receivingUsers - for whom is a reminder intended for
-* String msg - reminder name
-* Date date (yyy-MM-dd) - date when receiving users should be reminded
+The REST API is described below.
 
-Example for adding a reminder:
+## Import Employee Profiles
 
-* localhost:8080/reminders/add
+### Request
 
-* Body:  
-{  
-&nbsp;&nbsp;&nbsp;&nbsp; "user" : "JohnDoe",  
-&nbsp;&nbsp;&nbsp;&nbsp; "receivingUsers" : [  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "JaneDoe", "JamesSmith", "RobertJones"  
-&nbsp;&nbsp;&nbsp;&nbsp; ],  
-&nbsp;&nbsp;&nbsp;&nbsp; "msg" : "Team meeting",  
-&nbsp;&nbsp;&nbsp;&nbsp; "date" : "2021-10-02"  
-}  
+`POST /api/upload/importEmployeeProfiles`
 
-The REST endpoint for getting reminders for the specified user on the specified date:
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
 
-* {site-url}/reminders/get/{user}/{date} (HTTP GET method)
-
-* Date should be passed in format yyyy-MM-dd.
-
-Example for getting a reminder:
-
-* localhost:8080/reminders/get/JaneDoe/2021-10-02
+### Response
