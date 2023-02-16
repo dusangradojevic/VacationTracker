@@ -35,7 +35,7 @@ Example .csv files are located in `files` directory.
     
     `file=[multipart file]`
     
-    `Example: employee_profiles.csv`
+    Example: `employee_profiles.csv`
     
     **Optional:**
     
@@ -73,7 +73,7 @@ Example .csv files are located in `files` directory.
     
     `file=[multipart file]`
     
-    `Example: used_vacation_dates.csv`
+    Example: `used_vacation_dates.csv`
     
     **Optional:**
     
@@ -111,7 +111,7 @@ Example .csv files are located in `files` directory.
     
     `file=[multipart file]`
     
-    `Example: vacations_2019.csv`
+    Example: `vacations_2019.csv`
     
     **Optional:**
     
