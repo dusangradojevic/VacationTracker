@@ -15,11 +15,12 @@
 
 ### Request
 
-* HTTP method - POST
+* **URL: `/api/upload/importEmployeeProfiles`**
 
-* Endpoint: `/api/upload/importEmployeeProfiles`
+* **HTTP Method - `POST`**
 
-* Parameter file: `file=employee_profiles.csv`
+* **Body Params:**
+*   File content: `employee_profiles.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
@@ -36,7 +37,12 @@
 
 ### Request
 
-`POST /api/upload/importUsedVacations`
+* **URL: `/api/upload/importUsedVacations`**
+
+* **HTTP Method - `POST`**
+
+* **Body Params:**
+*   File content: `used_vacation_dates.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=used_vacation_dates.csv' http://localhost:8081/api/upload/importUsedVacations
 
@@ -53,7 +59,12 @@
 
 ### Request
 
-`POST /api/upload/importAvailableVacationDaysPerYear`
+* **URL: `/api/upload/importAvailableVacationDaysPerYear`**
+
+* **HTTP Method - `POST`**
+
+* **Body Params:**
+*   File content: `vacations_2019.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=vacations_2019.csv' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
 
@@ -70,7 +81,9 @@
 
 ### Request
 
-`POST /api/upload/clearDatabase`
+* **URL: `/api/upload/clearDatabase`**
+
+* **HTTP Method - `POST`**
 
     curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
 
@@ -86,7 +99,9 @@
 
 ### Request
 
-`GET /api/search/getVacationDaysPerYear?year=targetYear`
+* **URL: `/api/search/getVacationDaysPerYear?year=targetYear`**
+
+* **HTTP Method - `GET`**
 
     curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
@@ -105,7 +120,9 @@
 
 ### Request
 
-`GET /api/search/getUsedVacationDaysForTimePeriod?startDate=targetStartDate&endDate=targetEndDate`
+* **URL: `/api/search/getUsedVacationDaysForTimePeriod?startDate=targetStartDate&endDate=targetEndDate`**
+
+* **HTTP Method - `GET`**
 
     curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
@@ -135,6 +152,13 @@
 ## Insert New Record
 
 ### Request
+
+* **URL: `/api/search/insertNewRecord`**
+
+* **HTTP Method - `POST`**
+
+* **Body Params:**
+    File content: `vacations_2019.csv`
 
 `POST /api/search/insertNewRecord`
 
