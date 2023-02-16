@@ -9,9 +9,7 @@
 
     docker-compose up 
     
-# REST API
-
-The REST API is described below.
+# Data import microservice REST API
 
 ## Import Employee Profiles
 
@@ -46,6 +44,8 @@ The REST API is described below.
     {
         "message": "Import successful."
     }
+    
+# Data search microservice REST API
 
 ## Import Available Vacation Days Per Year
 
@@ -63,6 +63,20 @@ The REST API is described below.
     {
         "message": "Import successful."
     }
+    
+## Clear Database
+
+### Request
+
+`POST /api/upload/clearDatabase`
+
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
+
+### Response
+
+    Status: 200 OK
+    Content-Type: text/plain
+    Content: None
 
 ## Get Vacation Days Per Year
 
@@ -130,17 +144,3 @@ The REST API is described below.
     {
         "message": "New vacation ID: 640"
     }
-
-## Clear Database
-
-### Request
-
-`POST /api/upload/clearDatabase`
-
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
-
-### Response
-
-    Status: 200 OK
-    Content-Type: text/plain
-    Content: None
