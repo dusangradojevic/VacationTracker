@@ -115,8 +115,6 @@
 * **Method**
 
     `POST`
-
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
     
 * **URL Params:**
 
@@ -125,6 +123,8 @@
 * **Body Params:**
 
     None
+    
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
 
 ### Response
 
@@ -189,7 +189,7 @@
 
     **Required**
     
-    `startDate=[date]
+    `startDate=[date]\
     endDate=[date]`
     
     **Optional**
