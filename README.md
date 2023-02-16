@@ -26,8 +26,14 @@
     None
 
 * **Body Params:**
+
+    **Required:**
     
     File content: `employee_profiles.csv`
+    
+    **Optional:**
+    
+    None
 
 * **Success response:**
 
@@ -56,8 +62,14 @@
     None
 
 * **Body Params:**
+
+    **Required:**
    
     File content: `used_vacation_dates.csv`
+    
+    **Optional:**
+    
+    None
     
 * **Success response:**
 
@@ -86,8 +98,14 @@
     None
 
 * **Body Params:**
+
+    **Required:**
     
     File content: `vacations_2019.csv`
+    
+    **Optional:**
+    
+    None
 
 * **Success response:**
 
@@ -145,11 +163,11 @@
     
 * **URL Params:**
 
-    **Required**
+    **Required:**
     
     `year=[date(YYYY-MMM-dd)]`
     
-    **Optional**
+    **Optional:**
     
     None
 
@@ -181,13 +199,13 @@
     
 * **URL Params:**
 
-    **Required**
+    **Required:**
     
     `startDate=[date(YYYY-MMM-dd)]`
     
     `endDate=[date(YYYY-MMM-dd)]`
     
-    **Optional**
+    **Optional:**
     
     None
 
@@ -243,13 +261,13 @@
 
 * **Body Params:**
 
-    **Required**
+    **Required:**
 
     `startDate=[date(YYYY-MMM-dd)]`
     
     `endDate=[date(YYYY-MMM-dd)]`
     
-    **Optional**
+    **Optional:**
     
     None
     
