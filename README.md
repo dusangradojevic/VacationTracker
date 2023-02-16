@@ -29,7 +29,9 @@
 
     **Required:**
     
-    File content: `employee_profiles.csv`
+    `file=[multipart file]`
+    
+    `Example: employee_profiles.csv`
     
     **Optional:**
     
@@ -64,8 +66,10 @@
 * **Body Params:**
 
     **Required:**
-   
-    File content: `used_vacation_dates.csv`
+    
+    `file=[multipart file]`
+    
+    `Example: used_vacation_dates.csv`
     
     **Optional:**
     
@@ -101,7 +105,9 @@
 
     **Required:**
     
-    File content: `vacations_2019.csv`
+    `file=[multipart file]`
+    
+    `Example: vacations_2019.csv`
     
     **Optional:**
     
