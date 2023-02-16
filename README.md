@@ -189,9 +189,9 @@
 
     **Required**
     
-    `startDate=[date]
+    `startDate=[date]`
     
-    endDate=[date]`
+    `endDate=[date]`
     
     **Optional**
     
