@@ -70,7 +70,7 @@ The REST API is described below.
 
 `GET /api/search/getVacationDaysPerYear?year=targetYear`
 
-    curl -i -H 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
+    curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
 ### Response
 
@@ -89,7 +89,7 @@ The REST API is described below.
 
 `GET /api/search/getUsedVacationDaysForTimePeriod?startDate=targetStartDate&endDate=targetEndDate`
 
-    curl -i -H 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
+    curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
 ### Response
 
@@ -120,7 +120,7 @@ The REST API is described below.
 
 `POST /api/search/insertNewRecord`
 
-    curl -i -H 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
+    curl -i -H --user "username:password" 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
 
 ### Response
 
