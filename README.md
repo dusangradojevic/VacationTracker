@@ -39,9 +39,9 @@
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
 
 ## Import Used Vacations
 
@@ -65,15 +65,15 @@
     
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 ## Import Available Vacation Days Per Year
 
@@ -97,15 +97,15 @@
 
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 ## Clear Database
 
@@ -131,15 +131,15 @@
     
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: None
+    * **Content**: None
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 # Data search microservice REST API
 
@@ -171,15 +171,15 @@
 
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "totalDays": 20, "usedDays": 12, "availableDays": 8 }`
+    * **Content**: `{ "totalDays": 20, "usedDays": 12, "availableDays": 8 }`
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
 
 ## Get Used Vacation Days For Time Period
 
@@ -213,9 +213,9 @@
 
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: 
+    * **Content**: 
     `[
         {
             "id": 115,
@@ -236,9 +236,9 @@
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
 
 ## Insert New Record
 
@@ -265,12 +265,12 @@
     
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "New vacation ID: 640" }`
+    * **Content**: `{ "message": "New vacation ID: 640" }`
     
 * **Error response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "New vacation ID: 640" }`
+    * **Content**: `{ "message": "New vacation ID: 640" }`
