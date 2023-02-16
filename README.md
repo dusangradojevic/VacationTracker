@@ -19,7 +19,7 @@ The REST API is described below.
 
 `POST /api/upload/importEmployeeProfiles`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
+    curl -i -H 'Accept: application/json' -d 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
 ### Response
 
@@ -38,7 +38,7 @@ The REST API is described below.
 
 `POST /api/upload/importUsedVacations`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importUsedVacations
+    curl -i -H 'Accept: application/json' -d 'file=used_vacation_dates.csv' http://localhost:8081/api/upload/importUsedVacations
 
 ### Response
     
@@ -57,7 +57,7 @@ The REST API is described below.
 
 `POST /api/upload/importAvailableVacationDaysPerYear`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
+    curl -i -H 'Accept: application/json' -d 'file=vacations_2019.csv' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
 
 ### Response
 
@@ -114,7 +114,7 @@ The REST API is described below.
 
 `POST /api/search/insertNewRecord`
 
-    curl -i -H 'Accept: application/json' http://localhost:8080/api/search/insertNewRecord
+    curl -i -H 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
 
 ### Response
 
