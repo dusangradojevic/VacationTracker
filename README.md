@@ -74,7 +74,7 @@ The REST API is described below.
 
 ### Request
 
-`POST /api/search/getVacationDaysPerYear?year=targetYear`
+`GET /api/search/getVacationDaysPerYear?year=targetYear`
 
     curl -i -H 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
@@ -93,7 +93,7 @@ The REST API is described below.
 
 ### Request
 
-`POST /api/search/getUsedVacationDaysForTimePeriod?startDate=targetStartDate&endDate=targetEndDate`
+`GET /api/search/getUsedVacationDaysForTimePeriod?startDate=targetStartDate&endDate=targetEndDate`
 
     curl -i -H 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
