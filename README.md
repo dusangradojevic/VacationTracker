@@ -43,8 +43,6 @@
 
 ## Import Used Vacations
 
-### Request
-
 * **URL:**
     
     `/api/upload/importUsedVacations`
@@ -62,19 +60,18 @@
     File content: `used_vacation_dates.csv`
 
     curl -i -H 'Accept: application/json' -t 'file=used_vacation_dates.csv' http://localhost:8081/api/upload/importUsedVacations
-
-### Response
     
-    Status: 200 OK
-    Content-Type: application/json
-    Content: 
-    {
-        "message": "Import successful."
-    }
+* **Success response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
+    
+* **Error response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
     
 ## Import Available Vacation Days Per Year
-
-### Request
 
 * **URL:**
     
@@ -94,14 +91,15 @@
 
     curl -i -H 'Accept: application/json' -t 'file=vacations_2019.csv' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
 
-### Response
+* **Success response:**
 
-    Status: 200 OK
-    Content-Type: application/json
-    Content: 
-    {
-        "message": "Import successful."
-    }
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
+    
+* **Error response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
     
 ## Clear Database
 
@@ -124,18 +122,20 @@
     None
     
     curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
+    
+* **Success response:**
 
-### Response
+    **Code**: 200
+    **Content**: None
+    
+* **Error response:**
 
-    Status: 200 OK
-    Content-Type: text/plain
-    Content: None
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
     
 # Data search microservice REST API
 
 ## Get Vacation Days Per Year
-
-### Request
 
 * **URL:**
     
@@ -161,20 +161,17 @@
 
     curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
-### Response
+* **Success response:**
 
-    Status: 200 OK
-    Content-Type: application/json
-    Content:
-    {
-        "totalDays": 20,
-        "usedDays": 12,
-        "availableDays": 8
-    }
+    **Code**: 200
+    **Content**: `{ "totalDays": 20, "usedDays": 12, "availableDays": 8 }`
+    
+* **Error response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
 
 ## Get Used Vacation Days For Time Period
-
-### Request
 
 * **URL:**
     
@@ -204,10 +201,11 @@
 
 ### Response
 
-    Status: 200 OK
-    Content-Type: application/json
-    Content:
-    [
+* **Success response:**
+
+    **Code**: 200
+    **Content**: 
+    `[
         {
             "id": 115,
             "startDate": "2019-10-07T00:00:00.000+00:00",
@@ -223,11 +221,14 @@
             "startDate": "2019-10-01T00:00:00.000+00:00",
             "endDate": "2019-10-07T00:00:00.000+00:00"
         },
-    ]
+    ]`
+    
+* **Error response:**
+
+    **Code**: 200
+    **Content**: `{ "message": "Import successful." }`
 
 ## Insert New Record
-
-### Request
 
 * **URL:**
     
@@ -249,12 +250,13 @@
         }
 
     curl -i -H --user "username:password" 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
+    
+* **Success response:**
 
-### Response
+    **Code**: 200
+    **Content**: `{ "message": "New vacation ID: 640" }`
+    
+* **Error response:**
 
-    Status: 200 OK
-    Content-Type: application/json
-    Content:
-    {
-        "message": "New vacation ID: 640"
-    }
+    **Code**: 200
+    **Content**: `{ "message": "New vacation ID: 640" }`
