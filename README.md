@@ -103,8 +103,6 @@
     
 ## Clear Database
 
-### Request
-
 * **URL:**
     
     `/api/upload/clearDatabase`
@@ -244,6 +242,8 @@
     None
 
 * **Body Params:**
+
+    **Required**
 
     `startDate=[date(YYYY-MMM-dd)]`
     
