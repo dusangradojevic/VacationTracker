@@ -16,7 +16,8 @@
 ### Request
 
 * **URL:**
-    `/api/upload/importEmployeeProfiles`
+    
+    /api/upload/importEmployeeProfiles
 
 * **HTTP Method - `POST`**
 
