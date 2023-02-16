@@ -148,7 +148,7 @@
     
 * **URL Params:**
 
-    ### Required
+    **Required**
     
     `year=targetYear`
 
