@@ -16,11 +16,11 @@
 * **URL:**
     
     `/api/upload/importEmployeeProfiles`
-
+    
 * **Method**
-
+    
     `POST`
-
+    
 * **URL Params:**
 
     None
@@ -45,7 +45,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
 
 ## Import Used Vacations
 
@@ -81,7 +81,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
     
 ## Import Available Vacation Days Per Year
 
@@ -117,7 +117,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
     
 ## Clear Database
 
@@ -147,7 +147,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
     
 # Data search microservice REST API
 
@@ -185,7 +185,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
 
 ## Get Used Vacation Days For Time Period
 
@@ -243,7 +243,7 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
 
 ## Insert New Record
 
@@ -281,4 +281,4 @@
 
     * **Code**: 400
     
-    * **Content**: `{ "message": "New vacation ID: 640" }`
+    * **Content**: `{ "message": ERROR_MESSAGE, "status": 400, "statusText": "Bad request" }`
