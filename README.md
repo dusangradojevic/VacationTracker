@@ -23,13 +23,13 @@ The REST API is described below.
 
 ### Response
 
-## Import Employee Profiles
+## Import Used Vacations
 
 ### Request
 
-`POST /api/upload/importEmployeeProfiles`
+`POST /api/upload/importUsedVacations`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importUsedVacations
 
 ### Response
     
@@ -42,13 +42,32 @@ The REST API is described below.
 
     []
 
-## Import Employee Profiles
+## Import Available Vacation Days Per Year
 
 ### Request
 
-`POST /api/upload/importEmployeeProfiles`
+`POST /api/upload/importAvailableVacationDaysPerYear`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
+
+### Response
+
+    HTTP/1.1 200 OK
+    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Status: 200 OK
+    Connection: close
+    Content-Type: application/json
+    Content-Length: 2
+
+    []
+
+## Get Vacation Days Per Year
+
+### Request
+
+`POST /api/search/getVacationDaysPerYear?year=2019`
+
+    curl -i -H 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
 
 ### Response
 
@@ -65,28 +84,9 @@ The REST API is described below.
 
 ### Request
 
-`POST /api/upload/importEmployeeProfiles`
+`POST /api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30`
 
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
-
-### Response
-
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 2
-
-    []
-
-## Import Employee Profiles
-
-### Request
-
-`POST /api/upload/importEmployeeProfiles`
-
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/importEmployeeProfiles
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
 ### Response
 
