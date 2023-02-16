@@ -45,6 +45,20 @@
         "message": "Import successful."
     }
     
+## Clear Database
+
+### Request
+
+`POST /api/upload/clearDatabase`
+
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
+
+### Response
+
+    Status: 200 OK
+    Content-Type: text/plain
+    Content: None
+    
 # Data search microservice REST API
 
 ## Import Available Vacation Days Per Year
@@ -63,20 +77,6 @@
     {
         "message": "Import successful."
     }
-    
-## Clear Database
-
-### Request
-
-`POST /api/upload/clearDatabase`
-
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
-
-### Response
-
-    Status: 200 OK
-    Content-Type: text/plain
-    Content: None
 
 ## Get Vacation Days Per Year
 
