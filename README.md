@@ -1,8 +1,9 @@
 ![image](https://user-images.githubusercontent.com/55301074/219312228-c049a5a7-ad38-4035-98bc-d406af904657.png)
 
-## Install
+## Install library
 
-    bundle install
+    cd database
+    mvn clean install
 
 The REST endpoint for reminder submitting:
 * {site-url}/reminders/add (HTTP POST method)
