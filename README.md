@@ -19,6 +19,8 @@
 
 * Endpoint: `/api/upload/importEmployeeProfiles`
 
+* Parameter file: `file=employee_profiles.csv`
+
     curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
 ### Response
