@@ -19,7 +19,9 @@
     
     `/api/upload/importEmployeeProfiles`
 
-* **HTTP Method - `POST`**
+* **Method**
+
+    `POST`
 
 * **Body Params:**
 *   File content: `employee_profiles.csv`
