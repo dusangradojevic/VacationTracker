@@ -33,9 +33,9 @@
 
 * **Success response:**
 
-    **Code**: 200
+    * **Code**: 200
     
-    **Content**: `{ "message": "Import successful." }`
+    * **Content**: `{ "message": "Import successful." }`
     
 * **Error response:**
 
