@@ -29,8 +29,6 @@
     
     File content: `employee_profiles.csv`
 
-    curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
-
 * **Success response:**
 
     * **Code**: 200
@@ -60,8 +58,6 @@
 * **Body Params:**
    
     File content: `used_vacation_dates.csv`
-
-    curl -i -H 'Accept: application/json' -t 'file=used_vacation_dates.csv' http://localhost:8081/api/upload/importUsedVacations
     
 * **Success response:**
 
@@ -92,8 +88,6 @@
 * **Body Params:**
     
     File content: `vacations_2019.csv`
-
-    curl -i -H 'Accept: application/json' -t 'file=vacations_2019.csv' http://localhost:8081/api/upload/importAvailableVacationDaysPerYear
 
 * **Success response:**
 
@@ -126,8 +120,6 @@
 * **Body Params:**
 
     None
-    
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
     
 * **Success response:**
 
@@ -167,8 +159,6 @@
 
     None
 
-    curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/upload/getVacationDaysPerYear?year=2019
-
 * **Success response:**
 
     * **Code**: 200
@@ -206,8 +196,6 @@
 * **Body Params:**
 
     None
-
-    curl -i -H --user "username:password" 'Accept: application/json' http://localhost:8080/api/search/getUsedVacationDaysForTimePeriod?startDate=2019-09-30&endDate=2019-10-30
 
 ### Response
 
@@ -260,8 +248,6 @@
             "startDate": 2019-08-30,
             "endDate": 2019-09-01
         }
-
-    curl -i -H --user "username:password" 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
     
 * **Success response:**
 
