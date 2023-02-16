@@ -238,8 +238,16 @@
 
     `POST`
 
+* **URL Params:**
+
+    None
+
 * **Body Params:**
-    File content: `vacations_2019.csv`
+
+    {
+        "startDate": 2019-08-30,
+        "endDate": 2019-09-01
+    }
 
     curl -i -H --user "username:password" 'Accept: application/json' -d 'startDate=2019-08-30&endDate=2019-09-01' http://localhost:8080/api/search/insertNewRecord
 
