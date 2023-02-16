@@ -44,10 +44,10 @@ The REST API is described below.
     
     Status: 200 OK
     Content-Type: application/json
-    Content: `
+    Content: 
     {
         "message": "Import successful."
-    }`
+    }
 
 ## Import Available Vacation Days Per Year
 
