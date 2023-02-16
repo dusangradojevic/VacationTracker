@@ -15,7 +15,7 @@
 
 ### Request
 
-`POST /api/upload/importEmployeeProfiles`
+`HTTP method POST /api/upload/importEmployeeProfiles`
 
     curl -i -H 'Accept: application/json' -t 'file=employee_profiles.csv' http://localhost:8081/api/upload/importEmployeeProfiles
 
@@ -45,22 +45,6 @@
         "message": "Import successful."
     }
     
-## Clear Database
-
-### Request
-
-`POST /api/upload/clearDatabase`
-
-    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
-
-### Response
-
-    Status: 200 OK
-    Content-Type: text/plain
-    Content: None
-    
-# Data search microservice REST API
-
 ## Import Available Vacation Days Per Year
 
 ### Request
@@ -77,6 +61,22 @@
     {
         "message": "Import successful."
     }
+    
+## Clear Database
+
+### Request
+
+`POST /api/upload/clearDatabase`
+
+    curl -i -H 'Accept: application/json' http://localhost:8081/api/upload/clearDatabase
+
+### Response
+
+    Status: 200 OK
+    Content-Type: text/plain
+    Content: None
+    
+# Data search microservice REST API
 
 ## Get Vacation Days Per Year
 
