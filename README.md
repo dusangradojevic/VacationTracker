@@ -149,7 +149,7 @@
 
     **Required**
     
-    `year=[date]`
+    `year=[date(YYYY-MMM-dd)]`
     
     **Optional**
     
@@ -185,9 +185,9 @@
 
     **Required**
     
-    `startDate=[date]`
+    `startDate=[date(YYYY-MMM-dd)]`
     
-    `endDate=[date]`
+    `endDate=[date(YYYY-MMM-dd)]`
     
     **Optional**
     
