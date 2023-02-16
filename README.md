@@ -39,7 +39,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
 
@@ -71,7 +71,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
     
@@ -103,7 +103,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
     
@@ -137,7 +137,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
     
@@ -177,7 +177,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
 
@@ -236,7 +236,7 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "Import successful." }`
 
@@ -271,6 +271,6 @@
     
 * **Error response:**
 
-    * **Code**: 200
+    * **Code**: 400
     
     * **Content**: `{ "message": "New vacation ID: 640" }`
